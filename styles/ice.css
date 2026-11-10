@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    justify-items: center;
+    margin: 20px auto 60px;
+    gap: 40px;
+}
+
+.projects h1 {
+    grid-column: span 3;
+    width: 50%;
+    text-align: center;
+    background-color: #353535;
+    color: white;
+    padding: 10px 5px;
+    border-radius: 20px;
+    margin: 30px 0;
+    box-shadow: 6px 7px 5px darkgray;
+}
+
+.ice-box {
+    box-sizing: border-box;
+    padding: 20px;
+    border: 8px solid #3c6e71;
+    border-radius: 40px;
+    text-align: center;
+    justify-items: center;
+    background-color: #d9d9d9;
+    text-decoration: none;
+    color: #353535;
+    transition: .3s ease;
+}
+
+.ice-box:hover {
+    transition: .5s ease;
+    transform: scale(1.1);
+    box-shadow: 6px 7px 5px;
+}
+
+.ice-box img {
+    width: 300px;
+    display: block;
+    aspect-ratio: 1;
+    object-fit: cover;
+    box-sizing: border-box;
+    align-content: center;
+    border-radius: 40px;
+    border: 6px  solid #353535;
+}
+
+.ice-box h2 {
+    font-family: "open sans";
+    color: #284b63;
+}
+
+.ice-box p {
+    font-family: "open sans";
+    color: #353535;
+    width: 300px;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles Spotlights</title>
+    <style>
+        body {
+        margin: 0;
+        padding: 30px;
+        background-color: #e9eeee;
+        font-family: Arial, sans-serif;
+    }
+
+    .leadership-card {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 15px;
+
+        width: min(100%, 710px);
+        margin: 0 auto;
+        padding: 12px 20px 25px;
+        border: 6px solid black;
+        border-radius: 32px;
+        overflow: hidden;
+        color: white;
+    }
+
+    .background {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+    }
+
+    .background img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .presidency, .twelve {
+        position: relative;
+        z-index: 1;
+        min-width: 0;
+        text-align: center;
+    }
+
+    .presidency h1 {
+        margin: 0 0 8px;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .pictures {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 22px;
+    }
+
+    .pictures img {
+        width: 105px;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border: 6px solid white;
+        border-radius: 50%;
+    }
+
+    .pictures #president {
+        width: 120px;
+    }
+
+    .twelve h2 {
+        margin: 0 0 10px;
+        font-size: 21px;
+        font-weight: 400;
+    }
+
+    .pictures-12 {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0,1fr));
+        justify-items: center;
+        gap: 20px 16px;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .pictures-12 img {
+        display: block;
+        width: 88px;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border: 5px solid white;
+        border-radius: 50%;
+    }
+
+    img:hover {
+        border-color: grey;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="leadership-card"> 
+        <div class="background">
+            <img src="images/christus.webp">
+        </div>
+
+        <section class="presidency">
+            <h1>First Presidency</h1>
+
+            <div class="pictures">
+                <img src="images/eyring.webp">
+                <img id="president" src="images/oaks.webp">
+                <img src="images/christofferson.webp">
+            </div>
+        </section>
+
+        <section class="twelve">
+            <h2>Quorum of the Twelve Apostles</h2>
+
+            <div class="pictures-12">
+                <img class="apostle" src="images/uchtdorf.webp">
+                <img class="apostle" src="images/bednar.webp">
+                <img class="apostle" src="images/cook.webp">
+                <img class="apostle" src="images/anderson.webp">
+                <img class="apostle" src="images/rasband.webp">
+                <img class="apostle" src="images/stevenson.webp">
+                <img class="apostle" src="images/renlund.webp">
+                <img class="apsotle" src="images/gong.webp">
+                <img class="apostle" src="images/soares.webp">
+                <img class="apostle" src="images/kearon.webp">
+                <img class="apostle" src="images/causse.webp">
+                <img class="apostle" src="images/gilbert.webp">
+            </div>
+        </section>
+    </div>
+</body>
+</html>

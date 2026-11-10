@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+body{
+    margin: 0;
+    background-color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #284b63;
+    padding: 15px 40px;
+    gap: 60px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 80px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Montserrat";
+    transition: .3s ease;
+}
+
+nav a:hover {
+    transition: .5s ease;
+    color: #d9d9d9;
+    transform: scale(1.15);
+}
+
+.logo-link img{
+    width: 200px;
+    height: auto;
+    display: block;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+footer {
+    width: 100%;
+    background-color: #284b63;
+    color: white;
+    padding: 30px 5px 10px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 150px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+.logo-link-f img {
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    height: auto;
+}
+
+.brand p {
+    line-height: 1.6;
+    max-width: 300px;
+    font-family: "open sans";
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    text-align: center;
+}
+
+.footer-links h3 {
+    font-family: "Montserrat";
+    font-size: 23px;
+    text-decoration: underline;
+}
+
+.footer-links a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: "Montserrat";
+}
+
+.footer-links a:hover {
+    transition: .5s ease;
+    color: #d9d9d9;
+    transform: scale(1.5);
+}
+
+.social h3 {
+    font-family: "Montserrat";
+    font-size: 23px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.icons img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid #d9d9d9;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+.copyright p {
+    margin: 0;
+    font-size: 14px;
+    font-family: "open sans";
+}
